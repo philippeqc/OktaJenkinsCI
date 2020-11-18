@@ -16,8 +16,8 @@ namespace OktaJenkinsCI
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((context, config) =>
                 {
-                        config.AddJsonFile("authconfig.json");
+                    config.AddJsonFile("authconfig.json");
                 })
                 .UseStartup<Startup>();
-                    }
+    }
 }
